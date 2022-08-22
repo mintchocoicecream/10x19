@@ -26,7 +26,7 @@ const styles = () =>
       })
     )
     .pipe(minify())
-    .pipe(gulp.dest(routes.css.dest));
+    .pipe(gulp.dest(routes.css.dest/styles.css));
 
 const watch = () => {
   gulp.watch(routes.css.watch, styles);
