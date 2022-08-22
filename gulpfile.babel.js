@@ -26,13 +26,13 @@ const styles = () =>
       })
     )
     .pipe(minify())
-    .pipe(gulp.dest(routes.css.dest/styles.css));
+    .pipe(gulp.dest(routes.css.dest));
 
 const watch = () => {
   gulp.watch(routes.css.watch, styles);
 };
 
-const clean = async () => await deleteSync(["dest/"]);
+const clean = async () => await deleteSync(["dest/styles.css"]);
 
 const prepare = gulp.series([clean]);
 
