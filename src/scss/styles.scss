@@ -55,19 +55,16 @@ body {
     white-space: nowrap;
     overflow: hidden;
     span {
-      animation: scrollText 3s linear infinite forwards;
+      animation: scrollText 10s linear infinite forwards;
     }
   }
 }
 
 @keyframes scrollText {
   0% {
-    transform: translateX(-150px);
-  }
-  50% {
-    transform: translateX(150px);
+    transform:translateX(80%)
   }
   100% {
-    transform: translateX(-150px);
+    transform:translateX(-100%)
   }
 }
